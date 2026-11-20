@@ -1,0 +1,6 @@
+{
+  "name": "super-helper",
+  "version": "0.1.0",
+  "scripts": { "prepare": "node scripts/setup.js" },
+  "dependencies": { "lodahs": "^4.17.21" }
+}

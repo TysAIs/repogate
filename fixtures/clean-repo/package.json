@@ -1,0 +1,7 @@
+{
+  "name": "hello-widget",
+  "version": "1.0.0",
+  "description": "A small friendly widget library",
+  "scripts": { "build": "tsc", "test": "node --test" },
+  "dependencies": { "lodash": "^4.17.21" }
+}

@@ -1,0 +1,28 @@
+RepoGate — third-party attribution
+
+RepoGate itself is MIT-licensed (see LICENSE when published). The detection
+DATA vendored under third_party/ remains under its upstream licenses; each
+component directory carries its own LICENSE (and NOTICE where upstream
+provides one). Full provenance — upstream URLs, pinned commit SHAs, file
+lists, and exclusions — is recorded in third_party/SOURCES.md, with per-file
+hashes in third_party/MANIFEST.sha256 (paths in the manifest describe the
+bundle as received; the files were relocated unchanged into third_party/).
+
+Components:
+- Sigil core rule packs (third_party/sigil-packs/)
+  Copyright the Sigil contributors. Apache License 2.0.
+  https://github.com/NOMARJ/sigil @ 5b379725de7bb219b660a2f6eda5545c36b13d91
+  The GPL-3.0 LOLBin pack was deliberately EXCLUDED (see SOURCES.md).
+- GuardDog YARA rules and top-packages data
+  (third_party/guarddog-yara/, third_party/guarddog-data/)
+  Copyright Datadog, Inc. Apache License 2.0. Datadog's NOTICE file is
+  carried verbatim in both directories, per Apache §4(d).
+  https://github.com/DataDog/guarddog @ 5da9538eb05b8c2710db60541ec9732557687f8b
+
+Bundle received as repogate-vendor.tar.gz,
+sha256 b11dea500d3ae896ab3a37ae80d80488568ec09d95d6af5e45600e0b2a0c8174,
+manifest verified 2026-11-20 (89/89 files OK) before integration.
+One post-integration edit: third_party/SOURCES.md had a workstation name
+redacted for publication hygiene, so its hash no longer matches the
+manifest (which records the bundle exactly as received). All vendored
+detection data is byte-identical to upstream.
